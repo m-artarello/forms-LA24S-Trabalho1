@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Formulário</title>
+</head>
+<body>
+    <form class="bg-cinza width-736px align-itens" action="#" method="post">
+
+        
+        <div class="flex align-itens">
+            <label class="width-5" for="nome">Nome  *</label>
+            <input class="height-28px width-400px" type="text" name="nome" id="nome" required>
+        </div>
+
+        <div class="flex align-itens margin-top-10px">
+            <label class="width-5" for="email">E-mail  *</label>
+            <input class="height-28px width-400px" type="email" name="email" id="email" required>
+        </div>
+        
+        <div class="flex align-itens margin-top-10px">
+            <label class="width-5" for="senha">Senha  *</label>
+            <input class="height-28px width-148px" type="text" name="senha" id="senha">
+        </div>
+        <div class="flex align-itens margin-top-10px">
+            <label class="width-5" for="nascimento">Data de nascimento</label>
+            <input class="height-28px width-148px" type="date" name="nascimento" id="nascimento"
+                required
+                pattern="(\)(\d{2})(\)\d{4,5}-\d{4}"    
+                placeholder="(00) 0000-0000"
+            >
+        </div>
+        
+        <div class="flex align-itens gap-16px margin-top-10px">
+            <label for="">Declaro que sou: </label>
+            <div>
+                <input type="radio" name="Tipo" id="menor" value="menor">
+                <label for="menor">Menor que 18 anos</label>
+            </div>
+            <div>
+                <input type="radio" name="Tipo" id="maior" value="maior">
+                <label for="maior">Maior que 18 anos</label>
+            </div>
+        </div>
+
+        <div class="flex align-itens margin-top-10px gap-16px">
+            <label for="">Adultos</label>
+            <select class="height-28px" name="adultos" id="adultos">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+        </div>
+        <div class="flex align-itens margin-top-10px gap-16px">
+            <label for="">Crianças</label>
+            <select class="height-28px" name="adultos" id="criancas">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+        </div>
+
+        <div class="flex align-itens margin-top-10px gap-16px">
+            <label for="">Mensagem</label>
+            <textarea name="mensagem" id="mensagem" cols="10" rows="1"></textarea>
+        </div>
+        <div class="margin-top-10px">
+            <input class="margin-top-10px" type="submit" value="Enviar">
+        </div>
+        
+    </form>
+</body>
+</html>
